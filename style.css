@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-main:#FF6768;
+    --lighter-main:#17223B;
+    --even-lighter:#263859;
+    --lightest:#bac3d1;
+}
+
+body{
+    background-color: var(--lighter-main);
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper{
+    flex-direction: column;
+    width: 80vmin;
+    height: 40vmax;
+    height: auto;
+    /* border: 1px solid black; */
+    background-color: var(--lightest);
+    border-radius: 15px;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    box-shadow: 1px 1px 30px rgb(97, 96, 96);
+}
+
+.search-bar{
+    justify-content: center;
+    gap: 100px;
+    padding: 20px 10px;
+    width: 90%;
+}
+
+#search{
+    padding: 10px 20px;
+    width: 60%;
+    outline: none;
+    border: 1px solid var(--dark-main);
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px var(--dark-main);
+    font-size: 1.2rem;
+}
+
+#search-button{
+    /* width: 100px; */
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--dark-main);
+    color: white;
+    transition: all 0.5s;
+}
+
+#search-button:hover{
+    box-shadow: 1px 1px 4px var(--dark-main);
+}
+
+
+.app-title{
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 1.8rem;
+    font-family: 'Concert One', cursive;
+    color: white;
+    background-color: var(--dark-main);
+}
+
+.notification{
+    margin:10px 0px;
+    background-color: rgb(251, 176, 176);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    /* font-family: 'Concert One', cursive; */
+}
+.temperature-icon{
+    font-size: 4rem;
+    margin: 15px 0px;
+    font-family: 'Concert One', cursive;
+}
+
+.weather-image{
+    width: 200px;
+}
+
+div.weather-icon,.temperature-icon{
+    justify-content: center;
+    align-items: center;
+}
+
+.temperature-desc{
+    font-family: 'Concert One', cursive;
+    text-align: center;
+    font-weight: 300;
+    font-size: 2rem;
+    color: var(--dark-main);
+}
+.location{
+    text-align: center;
+    font-family: 'Concert One', cursive;
+    margin: 20px 0px;
+    font-size: 25px;
+}
+
+@media screen and (max-width:650px) {
+
+    .search-bar{
+        flex-flow: column wrap;
+        gap: 40px;
+    }
+    #search{
+        width: 80%;
+        margin: 0px auto;
+    }
+
+    #search-button{
+        margin: 0px auto;
+        width: 100px;
+        padding: 10px 20px;
+    }
+
+    
+}
+
+
