@@ -94,7 +94,7 @@ body{
 }
 .temperature-icon{
     font-size: 4rem;
-    margin: 15px 0px;
+    margin: 5px 0px 15px 0px;
     font-family: 'Concert One', cursive;
 }
 
@@ -117,7 +117,7 @@ div.weather-icon,.temperature-icon{
 .location{
     text-align: center;
     font-family: 'Concert One', cursive;
-    margin: 20px 0px;
+    margin: 36px 0px;
     font-size: 25px;
 }
 
