@@ -12,7 +12,7 @@ let apiKey=`344fc424bbc7e2f1e56e4aafad8e0508`;
 /*const API = `http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={apiKey}`; */
 
 async function getWeather(city){
-    let url=`http://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`;
+    let url=`https://api.openweathermap.org/data/2.5/weather?q=${city}&APPID=${apiKey}&units=metric`;
     let dataFetch=await fetch(url);
     let jsonData=await dataFetch.json();
     return showWeather(jsonData);
